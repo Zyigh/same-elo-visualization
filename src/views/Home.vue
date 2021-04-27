@@ -1,17 +1,15 @@
 <template>
-  <div class="container">
+  <div class="zcontainer">
     <div class="row mt-2">
-      <div class="col-lg-6">
-        <div class="mb-2">
-          <EloScoreViewer />
-        </div>
+      <div class="col-xl-9">
+          <ResultTable />
       </div>
-      <div class="col-lg-6">
+      <div class="col-xl-3">
         <div class="mb-2">
           <RoundSelector />
         </div>
         <div>
-          <ResultTable />
+          <EloScoreViewer />
         </div>
       </div>
     </div>
@@ -32,3 +30,11 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.zcontainer {
+  margin: 0 auto;
+  width: 90%;
+  min-width: 768px;
+}
+</style>

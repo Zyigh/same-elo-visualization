@@ -8,22 +8,29 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    k: 40,
+    k: 10,
     baseElo: 2500,
     players,
-    rounds
+    rounds,
+    lastRound: -1
   },
   mutations: {
     RESET_ELO_FOR_PLAYER(state, {player, newElo}) {
-      state.players[player.id - 1].elo = Math.round(newElo)
+      state.players.filter(p => p.id === player.id)[0].elo = Math.round(newElo)
     },
     CHANGE_K(state, newK) {
       state.k = newK
+    },
+    CHANGE_LAST_ROUND(state, lastRound) {
+      state.lastRound = lastRound
     }
   },
   actions: {
     changeK({commit}, newK) {
       commit('CHANGE_K', newK)
+    },
+    changeLastRound({commit}, lastRound) {
+      commit('CHANGE_LAST_ROUND', lastRound)
     },
     computeElosAtRound({commit, state}, round) {
       const numberOfGames = round + 1
@@ -49,10 +56,12 @@ export default new Vuex.Store({
   modules: {
   },
   getters: {
+    getK: state => state.k,
+    getLastRound: state => state.lastRound,
     getPlayer: (state, id) => state.players.filter(p => p.id === id)[0] || null,
     getPlayers: state => state.players,
     getRound: (state, id) => state.rounds.filter(r => r.id === id)[0] || null,
     getRounds: state => state.rounds,
-    getK: state => state.k
+    getRoundsRestricted: state => state.rounds.slice(0, state.lastRound + 1),
   }
 })

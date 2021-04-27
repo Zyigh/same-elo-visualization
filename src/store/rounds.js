@@ -1,223 +1,249 @@
+const nepo = 1;
+const giri = 2;
+const caruana = 3;
+const mvl = 4;
+const grischuk = 5;
+const ding = 6;
+const wang = 7;
+const alkseenko = 8;
+
 export default [
     [{
-        whitePlayer: 4,
-        blackPlayer: 3,
+        whitePlayer: mvl,
+        blackPlayer: caruana,
         result: 0.5
     }, {
-        whitePlayer: 6,
-        blackPlayer: 7,
+        whitePlayer: ding,
+        blackPlayer: wang,
         result: 0
     }, {
-        whitePlayer: 2,
-        blackPlayer: 1,
+        whitePlayer: giri,
+        blackPlayer: nepo,
         result: 0
     }, {
-        whitePlayer: 5,
-        blackPlayer: 8,
+        whitePlayer: grischuk,
+        blackPlayer: alkseenko,
         result: 0.5
     }],
     [{
-        whitePlayer: 3,
-        blackPlayer: 8,
+        whitePlayer: caruana,
+        blackPlayer: alkseenko,
         result: 1
     }, {
-        whitePlayer: 1,
-        blackPlayer: 5,
+        whitePlayer: nepo,
+        blackPlayer: grischuk,
         result: 0.5
     }, {
-        whitePlayer: 7,
-        blackPlayer: 2,
+        whitePlayer: wang,
+        blackPlayer: giri,
         result: 0.5
     }, {
-        whitePlayer: 4,
-        blackPlayer: 6,
+        whitePlayer: mvl,
+        blackPlayer: ding,
         result: 1
     }],
     [{
-        whitePlayer: 6,
-        blackPlayer: 3,
+        whitePlayer: ding,
+        blackPlayer: caruana,
         result: 1
     }, {
-        whitePlayer: 2,
-        blackPlayer: 4,
+        whitePlayer: giri,
+        blackPlayer: mvl,
         result: 0.5
     }, {
-        whitePlayer: 5,
-        blackPlayer: 7,
+        whitePlayer: grischuk,
+        blackPlayer: wang,
         result: 0.5
     }, {
-        whitePlayer: 8,
-        blackPlayer: 1,
+        whitePlayer: alkseenko,
+        blackPlayer: nepo,
         result: 0.5
     }],
     [{
-        whitePlayer: 3,
-        blackPlayer: 1,
+        whitePlayer: caruana,
+        blackPlayer: nepo,
         result: 0.5
     }, {
-        whitePlayer: 7,
-        blackPlayer: 8,
+        whitePlayer: wang,
+        blackPlayer: alkseenko,
         result: 0.5
     }, {
-        whitePlayer: 4,
-        blackPlayer: 5,
+        whitePlayer: mvl,
+        blackPlayer: grischuk,
         result: 0.5
     }, {
-        whitePlayer: 6,
-        blackPlayer: 2,
+        whitePlayer: ding,
+        blackPlayer: giri,
         result: 0.5
     }],
     [{
-        whitePlayer: 2,
-        blackPlayer: 3,
+        whitePlayer: giri,
+        blackPlayer: caruana,
         result: 0.5
     }, {
-        whitePlayer: 5,
-        blackPlayer: 6,
+        whitePlayer: grischuk,
+        blackPlayer: ding,
         result: 0.5
     }, {
-        whitePlayer: 8,
-        blackPlayer: 4,
+        whitePlayer: alkseenko,
+        blackPlayer: mvl,
         result: 0.5
     }, {
-        whitePlayer: 1,
-        blackPlayer: 7,
-        result: 0.5
+        whitePlayer: nepo,
+        blackPlayer: wang,
+        result: 1
     }],
     [{
-        whitePlayer: 5,
-        blackPlayer: 3,
+        whitePlayer: grischuk,
+        blackPlayer: caruana,
         result: 0.5
     }, {
-        whitePlayer: 8,
-        blackPlayer: 2,
+        whitePlayer: alkseenko,
+        blackPlayer: giri,
         result: 0
     }, {
-        whitePlayer: 1,
-        blackPlayer: 6,
+        whitePlayer: nepo,
+        blackPlayer: ding,
         result: 1
     }, {
-        whitePlayer: 7,
-        blackPlayer: 4,
+        whitePlayer: wang,
+        blackPlayer: mvl,
         result: 0.5
     }],
     [{
-        whitePlayer: 3,
-        blackPlayer: 7,
+        whitePlayer: caruana,
+        blackPlayer: wang,
         result: 0.5
     }, {
-        whitePlayer: 4,
-        blackPlayer: 1,
+        whitePlayer: mvl,
+        blackPlayer: nepo,
         result: 1
     }, {
-        whitePlayer: 6,
-        blackPlayer: 8,
+        whitePlayer: ding,
+        blackPlayer: alkseenko,
         result: 0.5
     }, {
-        whitePlayer: 2,
-        blackPlayer: 5,
+        whitePlayer: giri,
+        blackPlayer: grischuk,
         result: 0.5
     }],
     [{
-        whitePlayer: 3,
-        blackPlayer: 4,
+        whitePlayer: caruana,
+        blackPlayer: mvl,
         result: 1
     }, {
-        whitePlayer: 7,
-        blackPlayer: 6,
+        whitePlayer: wang,
+        blackPlayer: ding,
         result: 0.5
     }, {
-        whitePlayer: 1,
-        blackPlayer: 2,
+        whitePlayer: nepo,
+        blackPlayer: giri,
         result: 0.5
     }, {
-        whitePlayer: 8,
-        blackPlayer: 5,
-        result: 1
-    }],
-    [{
-        whitePlayer: 8,
-        blackPlayer: 3,
-        result: 0.5
-    }, {
-        whitePlayer: 5,
-        blackPlayer: 1,
-        result: 0.5
-    }, {
-        whitePlayer: 2,
-        blackPlayer: 7,
-        result: 1
-    }, {
-        whitePlayer: 6,
-        blackPlayer: 4,
-        result: 0.5
-    }],
-    [{
-        whitePlayer: 3,
-        blackPlayer: 6,
-        result: 0.5
-    }, {
-        whitePlayer: 4,
-        blackPlayer: 2,
-        result: 0.5
-    }, {
-        whitePlayer: 7,
-        blackPlayer: 5,
-        result: 0.5
-    }, {
-        whitePlayer: 1,
-        blackPlayer: 8,
+        whitePlayer: alkseenko,
+        blackPlayer: grischuk,
         result: 1
     }],
     [{
-        whitePlayer: 1,
-        blackPlayer: 3,
+        whitePlayer: alkseenko,
+        blackPlayer: caruana,
         result: 0.5
     }, {
-        whitePlayer: 8,
-        blackPlayer: 7,
+        whitePlayer: grischuk,
+        blackPlayer: nepo,
         result: 0.5
     }, {
-        whitePlayer: 5,
-        blackPlayer: 4,
+        whitePlayer: giri,
+        blackPlayer: wang,
         result: 1
     }, {
-        whitePlayer: 2,
-        blackPlayer: 6,
+        whitePlayer: ding,
+        blackPlayer: mvl,
+        result: 0.5
+    }],
+    [{
+        whitePlayer: caruana,
+        blackPlayer: ding,
+        result: 0.5
+    }, {
+        whitePlayer: mvl,
+        blackPlayer: giri,
+        result: 0.5
+    }, {
+        whitePlayer: wang,
+        blackPlayer: grischuk,
+        result: 0.5
+    }, {
+        whitePlayer: nepo,
+        blackPlayer: alkseenko,
         result: 1
     }],
     [{
-        whitePlayer: 3,
-        blackPlayer: 2,
+        whitePlayer: nepo,
+        blackPlayer: caruana,
+        result: 0.5
+    }, {
+        whitePlayer: alkseenko,
+        blackPlayer: wang,
+        result: 0.5
+    }, {
+        whitePlayer: grischuk,
+        blackPlayer: mvl,
+        result: 1
+    }, {
+        whitePlayer: giri,
+        blackPlayer: ding,
+        result: 1
+    }],
+    [{
+        whitePlayer: caruana,
+        blackPlayer: giri,
         result: 0
     }, {
-        whitePlayer: 6,
-        blackPlayer: 5,
+        whitePlayer: ding,
+        blackPlayer: grischuk,
         result: 1
     }, {
-        whitePlayer: 4,
-        blackPlayer: 8,
+        whitePlayer: mvl,
+        blackPlayer: alkseenko,
         result: 1
     }, {
-        whitePlayer: 7,
-        blackPlayer: 1,
+        whitePlayer: wang,
+        blackPlayer: nepo,
         result: 0
     }],
     [{
-        whitePlayer: 7,
-        blackPlayer: 3,
+        whitePlayer: wang,
+        blackPlayer: caruana,
         result: 0
     }, {
-        whitePlayer: 1,
-        blackPlayer: 4,
+        whitePlayer: nepo,
+        blackPlayer: mvl,
         result: 0.5
     }, {
-        whitePlayer: 8,
-        blackPlayer: 6,
+        whitePlayer: alkseenko,
+        blackPlayer: ding,
         result: 0
     }, {
-        whitePlayer: 5,
-        blackPlayer: 2,
+        whitePlayer: grischuk,
+        blackPlayer: giri,
+        result: 1
+    }],
+    [{
+        whitePlayer: caruana,
+        blackPlayer: grischuk,
+        result: 0.5
+    }, {
+        whitePlayer: giri,
+        blackPlayer: alkseenko,
+        result: 0
+    }, {
+        whitePlayer: ding,
+        blackPlayer: nepo,
+        result: 1
+    }, {
+        whitePlayer: mvl,
+        blackPlayer: wang,
         result: 1
     }]
 ]

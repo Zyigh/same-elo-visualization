@@ -4,7 +4,7 @@
       <b-form-select v-model="currentRound" :options="options" @change="resetElos" class="mt-auto" />
     </div>
     <div class="col-4">
-      <label for="k-changer">Valeur de K</label>
+      <label for="k-changer">Valeur K</label>
       <b-form-input id="k-changer" v-model="k" type="number" @change="changeK" />
     </div>
   </div>
@@ -17,6 +17,7 @@ export default {
   name: "RoundSelector",
   mounted() {
     this.k = this.getK
+    this.currentRound = this.getLastRound - 1
   },
   data() {
     return {
@@ -40,11 +41,13 @@ export default {
     },
     ...mapGetters([
         'getK',
-        'getRounds'
+        'getRounds',
+        'getLastRound'
     ])
   },
   methods: {
     resetElos() {
+      this.$store.dispatch('changeLastRound', this.currentRound)
       this.$store.dispatch('computeElosAtRound', this.currentRound)
     },
     async changeK() {
