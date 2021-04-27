@@ -37,7 +37,7 @@ export default new Vuex.Store({
       const rounds = state.rounds.slice(0, numberOfGames)
       const games = rounds.flatMap(r => r)
 
-      for (const player of state.players) {
+      state.players.forEach( player => {
         const averageScore = games
             .filter(game => game.whitePlayer === player.id || game.blackPlayer === player.id)
             .reduce((acc, game) => {
@@ -50,7 +50,7 @@ export default new Vuex.Store({
         const newElo = numberOfGames > 0 ? state.baseElo + (state.k * (averageScore - 0.5)) : state.baseElo
 
         commit('RESET_ELO_FOR_PLAYER', {player, newElo})
-      }
+      })
     }
   },
   modules: {

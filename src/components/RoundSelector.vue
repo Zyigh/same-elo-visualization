@@ -17,7 +17,7 @@ export default {
   name: "RoundSelector",
   mounted() {
     this.k = this.getK
-    this.currentRound = this.getLastRound - 1
+    this.currentRound = this.getLastRound
   },
   data() {
     return {

@@ -23,13 +23,16 @@
 </template>
 
 <script>
+import { clone } from 'lodash';
 import { mapGetters } from 'vuex';
 
 export default {
   name: "ResultTable",
   computed: {
     rawFields() {
-      return this.getPlayers.map(player => player.name.replace(/ /g, '_'))
+      return clone(this.getPlayers)
+        .sort((p1, p2) => p1.id < p2.id ? -1 : 1)
+        .map(player => player.name.replace(/ /g, '_'))
     },
     fields() {
       return [
