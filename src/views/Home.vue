@@ -1,18 +1,34 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="container">
+    <div class="row mt-2">
+      <div class="col-lg-6">
+        <div class="mb-2">
+          <EloScoreViewer />
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="mb-2">
+          <RoundSelector />
+        </div>
+        <div>
+          <ResultTable />
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import EloScoreViewer from '@/components/EloScoreViewer';
+import ResultTable from '@/components/ResultTable';
+import RoundSelector from '@/components/RoundSelector';
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld
+    EloScoreViewer,
+    ResultTable,
+    RoundSelector
   }
 }
 </script>
